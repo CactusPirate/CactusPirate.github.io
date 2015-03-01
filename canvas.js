@@ -4,7 +4,7 @@ if(window.addEventListener)
 	window.addEventListener('keydown', onKeyDown, false)
 };
 
-	var x;
+	var x = 0;
 	var y;
 
 function onKeyDown()
@@ -61,22 +61,23 @@ function onLoad()
 			canvas.width = window.innerWidth - 20;
 			canvas.height = window.innerHeight - 25;
 			
-			//x = Math.random() * canvas.width + 0;
-			//y = Math.random() * canvas.height + 0;
-
-			context.font = '40pt Calibri';
+			context.font = '40pt Times New Roman';
 			//context.fillStyle = 'blue';
 			context.fillText('sick',X(),Y());
 			context.fillText('and',X(),Y());
 			context.fillText('tired',X(),Y());
-			context.fillText('sick',X(),Y());
-			context.fillText('and',X(),Y());
-			context.fillText('tired',X(),Y());
-			context.fillText('sick',X(),Y());
-			context.fillText('and',X(),Y());
-			context.fillText('tired',X(),Y());
 			
-			setTimeout(update,1000/30);
+			
+			context.font = '100pt Times New Roman';
+			context.fillText('sick and tired of being sick and tired of being sick and tired of being sick and tired of being sick and tired of being',x,(canvas.height / 2));
+
+			x = x - 2;
+			if (x < (0 - context.width))
+			{
+				x = 0;
+			}
+
+			setTimeout(update,1000/20);
 		}
 		
 		initialise();
