@@ -63,13 +63,13 @@ function onLoad()
 			
 			context.font = '40pt Times New Roman';
 			//context.fillStyle = 'blue';
-			context.fillText('sick',X(),Y());
-			context.fillText('and',X(),Y());
-			context.fillText('tired',X(),Y());
+			context.fillText('follow',X(),Y());
+			context.fillText('your',X(),Y());
+			context.fillText('dreams',X(),Y());
 			
 			
 			context.font = '100pt Times New Roman';
-			context.fillText('sick and tired of being sick and tired of being sick and tired of being sick and tired of being sick and tired of being',x,(canvas.height / 2));
+			context.fillText('follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams follow your dreams',x,(canvas.height / 2));
 
 			x = x - 2;
 			if (x < (0 - context.width))
